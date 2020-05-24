@@ -8,7 +8,7 @@ import SubmitButton from '../../../components/SubmitButton';
 
 import {Form} from './styles';
 
-const IdentificacaoViolado = () => {
+const IdentificacaoViolado = ({navigation}) => {
   const [selectedData, setSelectedData] = useState(null);
 
   useEffect(() => {
@@ -74,7 +74,11 @@ const IdentificacaoViolado = () => {
             'sem informação',
           ]}
         />
-        <SubmitButton label="Próximo" path="Dashboard" />
+        <SubmitButton
+          label="Próximo"
+          navigation={navigation}
+          path="Dashboard"
+        />
       </Form>
     </>
   );

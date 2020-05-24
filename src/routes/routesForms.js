@@ -1,6 +1,5 @@
 import * as React from 'react';
 import {createStackNavigator} from '@react-navigation/stack';
-import RoutesSidebar from './routesSidebar';
 import IdentificacaoViolado from '../pages/Cadastros/IdentificacaoViolado';
 import DadosViolado from '../pages/Cadastros/DadosViolacao';
 import AgenteViolador from '../pages/Cadastros/AgenteViolador';
@@ -9,11 +8,17 @@ const Stack = createStackNavigator();
 
 function Form() {
   return (
-    <Stack.Navigator>
-      <Stack.Screen name="RoutesSidebar" component={RoutesSidebar} />
+    <Stack.Navigator initialRouteName={'IdentificacaoViolado'}>
       <Stack.Screen
         name="IdentificacaoViolado"
         component={IdentificacaoViolado}
+        options={{
+          title: 'Identificação violado',
+          headerStyle: {
+            backgroundColor: 'rgb(45, 166, 109)',
+          },
+          headerTintColor: '#fff',
+        }}
       />
       <Stack.Screen name="DadosViolado" component={DadosViolado} />
       <Stack.Screen name="AgenteViolador" component={AgenteViolador} />

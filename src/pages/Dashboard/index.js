@@ -8,7 +8,7 @@ import Botoes from '../../components/Botoes';
 const Dashboard = ({navigation}) => {
   return (
     <>
-      <Header titulo="Dashboard" />
+      {/* <Header titulo="Dashboard" /> */}
       <View>
         <Botoes
           label="Novo cadastro"

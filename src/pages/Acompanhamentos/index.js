@@ -7,7 +7,7 @@ import Header from '../../components/_layout/Topbar';
 const Acompanhamentos = () => {
   return (
     <>
-      <Header titulo="Acompanhamentos" />
+      {/* <Header titulo="Acompanhamentos" /> */}
       <View>
         <Text>Acompanhamentos</Text>
       </View>

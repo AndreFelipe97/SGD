@@ -10,7 +10,11 @@ const Stack = createStackNavigator();
 function Root() {
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName={'RoutesSidebar'}>
+      <Stack.Navigator
+        initialRouteName={'RoutesSidebar'}
+        screenOptions={{
+          headerShown: false,
+        }}>
         <Stack.Screen name="RoutesForm" component={RoutesForm} />
         <Stack.Screen name="RoutesSidebar" component={RoutesSidebar} />
       </Stack.Navigator>

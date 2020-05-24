@@ -7,7 +7,7 @@ import Header from '../../components/_layout/Topbar';
 const Usuarios = () => {
   return (
     <>
-      <Header titulo="Usuários" />
+      {/* <Header titulo="Usuários" /> */}
       <View>
         <Text>Usuários</Text>
       </View>
