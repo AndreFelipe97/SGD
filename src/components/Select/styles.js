@@ -6,7 +6,6 @@ export const Container = styled.View`
 
 export const Form = styled.View`
   flex-direction: row;
-  flex: 1;
   justify-content: space-between;
   align-items: center;
   padding-bottom: 2px;
@@ -16,7 +15,6 @@ export const Form = styled.View`
 `;
 
 export const Select = styled.Picker`
-  flex: 1;
   height: 40px;
   margin: 8px;
   border-radius: 4px;
