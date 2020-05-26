@@ -7,7 +7,7 @@ import Select from '../../../components/Select';
 import Calender from '../../../components/Datepicker';
 import SubmitButton from '../../../components/SubmitButton';
 
-import {Container, Form} from './styles';
+import {Container, Form, Button} from './styles';
 
 const IdentificacaoViolado = ({navigation}) => {
   return (
@@ -67,11 +67,13 @@ const IdentificacaoViolado = ({navigation}) => {
               'sem informação',
             ]}
           />
-          <SubmitButton
-            label="Próximo"
-            navigation={navigation}
-            path="DadosViolado"
-          />
+          <Button>
+            <SubmitButton
+              label="Próximo"
+              navigation={navigation}
+              path="DadosViolado"
+            />
+          </Button>
         </Form>
       </Container>
     </>

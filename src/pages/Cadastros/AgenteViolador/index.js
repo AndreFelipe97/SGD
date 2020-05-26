@@ -5,7 +5,7 @@ import TitleForm from '../../../components/TitleForm';
 import Select from '../../../components/Select';
 import SubmitButton from '../../../components/SubmitButton';
 
-import {Container, Form} from './styles';
+import {Container, Form, Button} from './styles';
 
 const AgenteViolador = ({navigation}) => {
   return (
@@ -43,11 +43,13 @@ const AgenteViolador = ({navigation}) => {
             mensagemSelect="Escolha um sexo"
             values={['Masculino', 'Feminino']}
           />
-          <SubmitButton
-            label="Finalizar"
-            navigation={navigation}
-            path="Dashboard"
-          />
+          <Button>
+            <SubmitButton
+              label="Finalizar"
+              navigation={navigation}
+              path="Dashboard"
+            />
+          </Button>
         </Form>
       </Container>
     </>
