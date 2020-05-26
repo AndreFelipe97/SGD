@@ -1,9 +1,8 @@
 import React from 'react';
-// import './config/ReactotronConfig';
+import './config/ReactotronConfig';
 import Routes from './routes';
-// import Routes from './routes/routesForms';
 
-function App() {
+function App({navigation}) {
   return (
     <>
       <Routes />

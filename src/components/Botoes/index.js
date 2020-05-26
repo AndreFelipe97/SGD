@@ -3,7 +3,6 @@ import React from 'react';
 import {Container, Title} from './styles';
 
 const Botoes = ({label, icon, path, background, navigation}) => {
-  // console.tron(background);
   return (
     <Container
       background={background}

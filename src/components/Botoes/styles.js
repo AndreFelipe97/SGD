@@ -13,6 +13,7 @@ export const Container = styled.TouchableOpacity.attrs((props) => ({
 `;
 
 export const Title = styled.Text`
+  font-family: Gibson;
   color: rgba(255, 255, 255, 1);
   font-size: 26px;
 `;

@@ -1,4 +1,5 @@
-import React from 'react';
+import React, {useCallback} from 'react';
+import {useFocusEffect} from '@react-navigation/native';
 import {View} from 'react-native';
 import Header from '../../components/_layout/Topbar';
 import Botoes from '../../components/Botoes';
@@ -8,7 +9,7 @@ import Botoes from '../../components/Botoes';
 const Dashboard = ({navigation}) => {
   return (
     <>
-      {/* <Header titulo="Dashboard" /> */}
+      <Header titulo="Dashboard" />
       <View>
         <Botoes
           label="Novo cadastro"

@@ -8,17 +8,14 @@ const Stack = createStackNavigator();
 
 function Form() {
   return (
-    <Stack.Navigator initialRouteName={'IdentificacaoViolado'}>
+    <Stack.Navigator
+      initialRouteName={'IdentificacaoViolado'}
+      screenOptions={{
+        headerShown: false,
+      }}>
       <Stack.Screen
         name="IdentificacaoViolado"
         component={IdentificacaoViolado}
-        options={{
-          title: 'Identificação violado',
-          headerStyle: {
-            backgroundColor: 'rgb(45, 166, 109)',
-          },
-          headerTintColor: '#fff',
-        }}
       />
       <Stack.Screen name="DadosViolado" component={DadosViolado} />
       <Stack.Screen name="AgenteViolador" component={AgenteViolador} />
